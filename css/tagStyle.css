@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #ebebeb;
 }
 
 body, h1, ul {
@@ -7,7 +7,7 @@ body, h1, ul {
     padding: 0;
 }
 
-body > header {
+body > header, body > footer {
     padding: 20px 0px;
 
     background-color: rgb(54, 54, 54);
@@ -63,7 +63,8 @@ main {
 
 main > article {
     background-color: #fff;
-    border: 10px solid #cacaca;
+    border-radius: 30px;
+    border: 4px solid #abaaaa;
     margin-bottom: 20px;
 }
 
@@ -93,20 +94,142 @@ main > article > section > p {
     padding: 0 5%;
 }
 
-/*
-h1{
-  margin: 0px 0px 0px 0px;
+
+main > article > footer {
+    padding: 20px 5%;
+    text-align: right;
 }
 
 
-a:link {
-    color: blue;
+main > article > footer > a {
+    padding: 1% 5%;
+
+    border-radius: 10px;
+        
+    color: #000;
+    background-color: rgb(155, 153, 153);
+
+    text-decoration: none;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-  
-a:visited {
-    color: whitesmoke;
+
+main > article > footer > a:hover {
+    padding: 0.8% 4%;
+    color: rgb(219, 69, 83);
+
 }
-  
-a:active {
-    color: yellowgreen;
-} */
+
+aside {
+    margin: 0 5% 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 4px solid #abaaaa;
+}
+
+aside > section {
+    padding: 2% 5%;
+}
+
+aside > section > h2 {
+    font: bold 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 26px ;
+
+}
+
+aside > section > ul {
+    list-style: none;
+}
+
+aside > section > ul > li {
+    margin-bottom: 2%;
+}
+
+aside > section > ul > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+aside > section > ul > li > img {
+    width: 8%;
+    float: left;
+    margin-right: 2%;
+}
+
+main > section > h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+} 
+
+main > section > table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+main > section {
+    padding: 0 5% 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 4px solid #abaaaa;
+    margin-bottom: 20px;
+}
+
+main > form{
+    padding: 0 5% 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 4px solid #abaaaa;
+    margin-bottom: 20px;
+}
+
+main > form > ul > li {
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+
+
+
+main > section > table td, main > section > table th{
+    border: 1px solid black;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    nav {
+        margin: 0 10%;
+    }
+
+    nav ul li {
+        width: 19% ;
+    }
+
+    nav ul li:not(:last-child){
+        margin-right: 8% ;
+    }
+
+    main, aside {
+        display:  inline-block;
+        vertical-align: top;
+    }
+
+    main {
+        width: 50%;
+        margin: 20px 5% 0 10%
+    }
+
+    aside {
+        width: 25%;
+        margin: 20px 5% 0 0;
+        box-sizing: border-box;  /* non conta la grandezza del bordo */
+        border-radius: 30px;
+    }
+
+    table {
+
+    }
+
+}
