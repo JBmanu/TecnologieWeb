@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../style/tagStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1> Flow </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li><li><a 
+            href="Sectioning.html"> Sectioning </a></li><li><a 
+            href="Heading.html"> Heading </a></li><li><a 
+            href="Phrasing.html"> Phrasing </a></li><li><a
+            href="Embedded.html"> Embedded </a></li><li><a
+            href="Flow.html"> Flow </a></li><li><a
+            href="Interactive.html"> Interactive </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header> <h2>Tabella</h2> </header>
+            <section>
+                <p> 
+                    Sono tablelle organizzate per righe. </br>
+                    <strong>tr</strong>: realizza le righe della Tabella </br>
+                    <strong>td</strong>: sono i dati della Tabella (cella) </br>
+                </p>
+            </section>
+
+            <section>
+                <code>
+                    <xmp><table></xmp>
+                    <xmp>  <tr></xmp>
+                    <xmp>    <td> Manu </td></xmp>
+                    <xmp>    <td> Ale </td></xmp>
+                    <xmp>  </tr></xmp>
+                    <xmp>    <tr></xmp>
+                    <xmp>    <td> Buizo </td></xmp>
+                    <xmp>    <td> Bonna </td></xmp>
+                    <xmp>  </tr></xmp>
+                    <xmp></table></xmp>
+                </code>
+            </section>
+
+            <section>
+                <table>
+                    <tr>
+                        <td> Manu </td>
+                        <td> Ale </td>
+                    </tr>
+                    <tr>
+                        <td> Buizo </td>
+                        <td> Bonna </td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Th</h2> </header>
+            <section>
+                <p> 
+                    Sono le celle d'intestazione della tabella che possono essere
+                    usate sia per le righe che per le colonne. Danno un effetto di 
+                    bold.
+                </p>
+            </section>
+
+            <section>
+                <code>
+                    <xmp><table></xmp>
+                    <xmp>  <tr></xmp>
+                    <xmp>    <th>Nome</th></xmp>
+                    <xmp>    <td> Manu </td></xmp>
+                    <xmp>    <td> Ale </td></xmp>
+                    <xmp>  </tr></xmp>
+                    <xmp>    <tr></xmp>
+                    <xmp>    <th> Cognome </th></xmp>
+                    <xmp>    <td> Buizo </td></xmp>
+                    <xmp>    <td> Racna </td></xmp>
+                    <xmp>  </tr></xmp>
+                    <xmp></table></xmp>
+                </code>
+            </section>
+
+            <section>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <td> Manu </td>
+                        <td> Ale </td>
+                    </tr>
+                    <tr>
+                        <th> Cognome </th>
+                        <td> Buizo </td>
+                        <td> Racna </td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Row/Col Span</h2> </header>
+            <section>
+                <p> 
+                    Sono attributi per le celle della tabella cioe per i tag 
+                    <strong>th e td</strong>.
+                </p>
+            </section>
+
+            <section>
+                <code>
+                    <xmp><table></xmp>
+                    <xmp>  <tr></xmp>
+                    <xmp>    <th>Nome</th></xmp>
+                    <xmp>    <td> Manu </td></xmp>
+                    <xmp>    <td> Ale </td></xmp>
+                    <xmp>  </tr></xmp>
+                    <xmp>    <tr></xmp>
+                    <xmp>    <th> Cognome </th></xmp>
+                    <xmp>    <td colspan="2"> Buizo per tutti </td></xmp>
+                    <xmp>  </tr></xmp>
+                    <xmp></table></xmp>
+                </code>
+            </section>
+
+            <section>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <td> Manu </td>
+                        <td> Ale </td>
+                    </tr>
+                    <tr>
+                        <th> Cognome </th>
+                        <td colspan="2"> Buizo per tutti </td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Elementi strutturali</h2> </header>
+            <section>
+                <p> 
+                    Questi tag vengono usati per migliorare la struttura semantica 
+                    e quindi l'accessibilità. Usati soprattutto nelle tabelle molto grandi.
+                </p>
+            </section>
+
+            <section>
+                <code>
+                    <xmp><colgroup> </colgroup></xmp>
+                    <xmp><thead> </thead></xmp>
+                    <xmp><tfoot> </tfoot></xmp>
+                    <xmp><tbody> </tbody></xmp>
+                </code>
+            </section>
+        </article>  
+        
+        <article>
+            <header> <h2>Attributo headers</h2> </header>
+            <section>
+                <p> 
+                    Attributo per referenziarsi al tag th.
+                </p>
+            </section>
+
+            <section>
+                <code>
+                    <xmp><tr></xmp>
+                    <xmp>  <th id="mb"> Manu buizo </th></xmp>
+                    <xmp>  <td headers="mb"> numbers </td></xmp>
+                    <xmp></tr></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Attributo Scope</h2> </header>
+            <section>
+                <p> 
+                    Per assegnare la cella d'intestazione, i quali possono essere row o col.
+                    Viene usato se ci sono due o più livelli d'intestazione.
+                </p>
+            </section>
+
+            <section>
+                <code>
+                    <xmp><tr></xmp>
+                    <xmp>  <th id="mb" scope="col"> Manu buizo </th></xmp>
+                    <xmp>  <td headers="mb"> numbers </td></xmp>
+                    <xmp></tr></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>UL</h2> </header>
+            <section>
+                <p> 
+                    Liste non ordinate. Ogni elelemto si aggiunge con il tag
+                    li.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><ul></xmp>
+                    <xmp>  <li> primo </li></xmp>
+                    <xmp>  <li> secondo </li></xmp>
+                    <xmp></ul></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>OL</h2> </header>
+            <section>
+                <p> 
+                    Liste ordinate. Ogni elelemto si aggiunge con il tag
+                    li.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><ol></xmp>
+                    <xmp>  <li> primo </li></xmp>
+                    <xmp>  <li> secondo </li></xmp>
+                    <xmp></ol></xmp>
+                </code>
+            </section>
+        </article>
+     
+        
+        <article>
+            <header> <h2>DL</h2> </header>
+            <section>
+                <p> 
+                    Liste di definizione. Ogni elelemto si aggiunge con il tag
+                    li.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><dl></xmp>
+                    <xmp>  <dt> termine </dt></xmp>
+                    <xmp>  <dd> definizione </dd></xmp>
+                    <xmp></dl></xmp>
+                </code>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

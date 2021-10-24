@@ -1,0 +1,167 @@
+body{
+    background-color: #92e7fc;
+    padding: 5px;
+}
+
+body > header {
+    color: #1a1eb2;
+    font-style: solid;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+body > nav {
+    margin: 0 5%;
+}
+
+body > nav > ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 1%;
+
+    width: 45%;
+
+    background-color: rgb(54, 54, 54);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+nav ul li:nth-child(odd) {
+    margin-right: 10%;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+nav ul li a:hover {
+    color: rgb(159, 69, 219);
+}
+
+main > article {
+    margin: 20px;
+    padding: 0% 2%;
+    float: left; 
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    size: auto;
+
+    border-style: solid;
+    border-color: #00733e;
+    border-radius: 25px;
+
+    background-color: #61d8a2;
+    
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+main > article:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+main > article > header {
+    color: #1144aa;
+
+    text-align: center;
+    font-size: auto;
+    font-weight: bold;
+    margin: 2% 2%;
+
+}
+
+main > article > header > h2 {
+    margin: 2% 2%;
+}
+
+aside > article {
+    margin: 20px;
+    padding: 0% 2%;
+    float: left; 
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    size: auto;
+
+    border-style: solid;
+    border-color: #00733e;
+    border-radius: 25px;
+
+    background-color: #61d8a2;
+    
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+code {
+    margin: auto;
+
+    color: #ffb073;
+    font-size: 80%;
+}
+
+@media screen and (min-width: 886px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    body > nav > ul {
+        list-style: none;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    body > nav > ul {
+        list-style: none;
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 886px) {
+
+    main > article {
+        float: none; 
+    }
+
+    body > nav > ul {
+        list-style: none;
+        font-size: 20px;
+    }
+}

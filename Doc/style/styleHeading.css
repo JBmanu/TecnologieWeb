@@ -1,0 +1,29 @@
+body{
+    background-color: whitesmoke;
+}
+
+body > header { 
+    color: #0a0a0a;
+    text-align: center;
+    font-weight: bolder;
+}
+
+body > main > article, body > article {
+    background-color: #f7f7f7;    
+
+    border: 1%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #18171c;
+
+    margin-bottom: 2%;
+}
+
+article > header {
+    text-align: center;
+    color: #18171c;
+}
+
+article > section > p {
+    color: ;
+}

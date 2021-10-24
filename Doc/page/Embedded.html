@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../style/tagStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1> Embedded </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li><li><a 
+            href="Sectioning.html"> Sectioning </a></li><li><a 
+            href="Heading.html"> Heading </a></li><li><a 
+            href="Phrasing.html"> Phrasing </a></li><li><a
+            href="Embedded.html"> Embedded </a></li><li><a
+            href="Flow.html"> Flow </a></li><li><a
+            href="Interactive.html"> Interactive </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header> <h2>Img</h2> </header>
+            <section>
+                <p>
+                    Le immagini inline sono definite attraverso questo elemento.
+                    Dove ci sono gli attributi obbligatori src (specifica l'URL del file) 
+                    e alt (testo alternativo, visualizzato in caso che non carichi l'immagine).
+                    Optionalmente si puo aggiungere l'attributo longdesc per la descrizione.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><img src="file.png" alt="file" /> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Audio</h2> </header>
+            <section>
+                <p>
+                    Definisce un modo standard per includere un audio.
+                    Aggiungendo l'attributo controls si aggiungono i controlli per il video e 
+                    l'attributo autoplay per far partire automaticamente il video.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><audio width="400" controls> </xmp>
+                    <xmp>  <source src="file.mp3" type="audio/mp3"/></xmp>
+                    <xmp></audio></xmp>
+                </code>
+            </section>
+        </article>
+        <article>
+            <header> <h2>Video</h2> </header>
+            <section>
+                <p>
+                    Definisce un modo standard per includere un video in una pagina Web.
+                    Aggiungendo l'attributo controls si aggiungono i controlli per il video e 
+                    l'attributo autoplay per far partire automaticamente il video.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><video width="400" controls> </xmp>
+                    <xmp>  <source src="file.mp4" type="video/mp4"/></xmp>
+                    <xmp></video></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Embed</h2> </header>
+            <section>
+                <p>
+                    Definisce un oggetto incluso in un documeto HTML, come il tag object 
+                    ma contrariamente a object non ammette alternative di nessun tipo.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><embed src="file.hmlt"/> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Object</h2> </header>
+            <section>
+                <p>
+                    Utilizzato anche per includere un documento HTML in un HTML. 
+                    Usato anche al posto del tag source.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><object data="prova.html"> </object></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Canvas</h2> </header>
+            <section>
+                <p>
+                    Fornisce le API necessarie per la generazione e il rendering dinamico di grafica.
+                    Lasciando la possibilita di disegnare. Interagisce tramire eventi con Javascript.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><canvas id="myCanvas"> </canvas> </xmp>
+                </code>
+            </section>
+        </article>
+
+
+    </main>
+</body>
+</html>

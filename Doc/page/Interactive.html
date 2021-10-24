@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../style/tagStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1> Interactive </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li><li><a 
+            href="Sectioning.html"> Sectioning </a></li><li><a 
+            href="Heading.html"> Heading </a></li><li><a 
+            href="Phrasing.html"> Phrasing </a></li><li><a
+            href="Embedded.html"> Embedded </a></li><li><a
+            href="Flow.html"> Flow </a></li><li><a
+            href="Interactive.html"> Interactive </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header> <h2>Form</h2> </header>
+            <section>
+                <p>
+                    E una parte del documento che contiene controlli di input.
+                    Gli attributi obbligatori sono action (specifica url) e 
+                    method (metodo HTTP get o post).
+                    Get usato per i dati in chairo mentre il post usato come 
+                    pseudo-riservati (serve anche https).
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><form action="wwww.google.it" methos="post"> </xmp>
+                    <xmp></form> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Label</h2> </header>
+            <section>
+                <p>
+                    Ogni controllo deve avere una label che descriva il 
+                    controllo dell'utente. E fondamentale per l'accessibilità. 
+                    Per relazionare la label si puo usare anche l'attributo id.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><form action="wwww.google.it" methos="post"> </xmp>
+                    <xmp>  <label for="CN"> Customer name: </label></xmp>
+                    <xmp>  <input id="CN" /></xmp>
+                    <xmp></form> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Fieldset</h2> </header>
+            <section>
+                <p>
+                    Elemento che raggruppa puù controlli che hanno semantica comune.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><form action="wwww.google.it" methos="post"> </xmp>
+                    <xmp>  <fieldset> </xmp>
+                    <xmp>    <label for="CN"> Customer name: </label></xmp>
+                    <xmp>    <input id="CN" /></xmp>
+                    <xmp>    <label for="Cc"> Customer cognome: </label></xmp>
+                    <xmp>    <input id="Cc" /></xmp>
+                    <xmp>  </fieldset> </xmp>
+                    <xmp>  <input type="submit"/></xmp>
+                    <xmp></form> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Input</h2> </header>
+            <section>
+                <p>
+                    Consente di inserire nella pagina molti tipi diversi di controllo.
+                    Il tipo puo essere specificato con l'attributo type (text, search, submit, 
+                    button, image ...). Nel caso del type uguale a button puo avere 
+                    l'attributo onclick per associarli uno script javascript.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><input type="submit" value="text" /> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Textarea</h2> </header>
+            <section>
+                <p>
+                    Definisce un controllo di input per testi multimediali. Si possono 
+                    specificare gli attributi cols e rows per le dimensioni.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><form action="wwww.google.it" methos="post"> </xmp>
+                    <xmp>  <textarea cols="4" rows="5"> </xmp>
+                    <xmp>   Qui il testo da inviare </xmp>
+                    <xmp>  </textarea> </xmp>
+                    <xmp></form> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Select</h2> </header>
+            <section>
+                <p>
+                    Usato per creare menu a tendina. Le diverse opzioni sono 
+                    introdotte dal tag option.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><Select name="tendina"> </Select> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Option</h2> </header>
+            <section>
+                <p>
+                    Introduce le opzioni del tag select. Si puo usare il tag optgroup
+                    per raggruppare piu option di una stessa famiglia. per dare una struttura 
+                    piu chiara e accessibile.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><select name="sport"> </xmp>
+                    <xmp>  <option> Calcio </option> </xmp>
+                    <xmp>  <option> Tennis </option> </xmp>
+                    <xmp>  <option> Golf </option> </xmp>
+                    <xmp></select> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Output</h2> </header>
+            <section>
+                <p>
+                    Rappresenta il risultato di un calcolo o azione dell'utente.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><form oninput="x.value=parseInt(a.value)"> </xmp>
+                    <xmp>  <label for="a"> slider </label></xmp>
+                    <xmp>  <input type="range" id="a" /> </xmp>
+                    <xmp>  <output name="x" for="a"> </output> </xmp>
+                    <xmp></form> </xmp>
+                </code>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

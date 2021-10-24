@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../style/tagStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1> HTML Documentation </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li><li><a 
+            href="Sectioning.html"> Sectioning </a></li><li><a 
+            href="Heading.html"> Heading </a></li><li><a 
+            href="Phrasing.html"> Phrasing </a></li><li><a
+            href="Embedded.html"> Embedded </a></li><li><a
+            href="Flow.html"> Flow </a></li><li><a
+            href="Interactive.html"> Interactive </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header> <h2>Prima pagina</h2> </header>
+            <section>
+                <p> Struttura di tag obbligatori per creare un documento HTML </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><!DOCTYPE html> </xmp>
+                    <xmp><html> </xmp>
+                    <xmp>  <head> </xmp>
+                    <xmp>    <title> Nome </title> </xmp>
+                    <xmp>    <meta charset="UTF-8" /> </xmp>
+                    <xmp>  </head> </xmp>
+                    <xmp>  <body> </xmp>
+                    <xmp>    Content of the document</xmp>
+                    <xmp>  </body> </xmp>
+                    <xmp></html></xmp>
+                </code>
+            </section>
+        </article>
+
+
+        <article>
+            <header> <h2>Metadati</h2> </header>
+            <section> 
+                <p> 
+                    Gli elementi di metadazione consentono di descrivere il documento. 
+                    Spesso usati dai motori di ricerca (name="description" usato per 
+                    lo sniplet di google).
+                </p>
+            </section>
+            <section>
+                <p> I metadati sono inclusi nell'head del documento. </p>
+                <code>
+                    <ul>
+                        <li> <xmp><title> </title></xmp> </li>
+                        <li> <xmp><base> </base></xmp> </li>
+                        <li> <xmp><link> </link></xmp> </li>
+                        <li> <xmp><meta> </meta></xmp> </li>
+                        <li> <xmp><style> </style></xmp> </li>
+                    </ul>
+                </code>
+            </section>
+        </article>
+
+
+        <article>
+            <header> <h2>Title</h2> </header>
+            <section>
+                <p>
+                    Rappresenta il titolo o il nome del documento (della scheda).
+                    Ogni documento ne deve avere al massimo 1.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><head> </xmp>
+                    <xmp>  <title> Nome della scheda </title> </xmp>
+                    <xmp></head> </xmp>
+                </code>
+            </section>
+        </article>
+
+
+        <article>
+            <header> <h2>Base</h2> </header>
+            <section>
+                <ul>
+                    <li> Questo elemento dev'essere unico all'interno del documento, 
+                        se vi sono più elemento <strong>base</strong>, viene preso in considerazione
+                        solo il primo. 
+                    </li>
+                    <li>
+                        Lo scopo del <strong>base</strong> e quella di indicare il
+                        <strong>path base</strong> del documento che serivra per                         
+                        risolvere gli URL relativi, sia in termini di <strong>href</strong>
+                        e di <strong>targe</strong> ("_blank" apre una nuova finestra).
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <code>
+                    <xmp><head> </xmp>
+                    <xmp>  <base href="https://www..." target="_blank" /> </xmp>
+                    <xmp></head> </xmp>
+                </code>
+            </section>
+        </article>
+
+
+        <article>
+            <header> <h2>Link</h2> </header>
+            <section>
+                <p>
+                    Usato per la creare <strong>relazioni</strong>, tra il documento
+                    e altri documenti o risorse. Usato soprattutto per 
+                    le relazioni con il <strong>CSS</strong>. Nel caso di href uguale 
+                    a #otherId allora andra al tag con quell'Id.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><head> </xmp>
+                    <xmp>  <link rel="stylesheet" type="text/css" href="file.css"/></xmp>
+                    <xmp></head> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Style</h2> </header>
+            <section>
+                <p>
+                    Permette di includere stili all'interno del documento.
+                    <strong>(Meglio di no!)</strong>
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><style> h1 {color:red;} p {color:blue;} </style></xmp>
+                </code>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

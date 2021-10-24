@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../style/tagStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1> Phrasing </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li><li><a 
+            href="Sectioning.html"> Sectioning </a></li><li><a 
+            href="Heading.html"> Heading </a></li><li><a 
+            href="Phrasing.html"> Phrasing </a></li><li><a
+            href="Embedded.html"> Embedded </a></li><li><a
+            href="Flow.html"> Flow </a></li><li><a
+            href="Interactive.html"> Interactive </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header> <h2> P </h2> </header>
+            <section>
+                <p>
+                    L'elemento inserisce un paragrafo testuale.
+                    <strong>L'andata a capo non basta !!</strong> </br>
+                    Va utilizzato solo quando non esiste un elemento più specifico 
+                    o semanticamente più idone per descrivere quel testo.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><p> Primo paragrafo di un testo. </p></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Br </h2> </header>
+            <section>
+                <p>
+                    Elemento che rappresenta una interruzione di linea (line break).
+                    La sua scrittura è con la chiusura istantane del tag /.
+                    <strong>Non deve essere usato per ottenere effetti grafici.</strong>
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp> Nel mezzo del camin di nostra vita </br> </xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Div </h2> </header>
+            <section>
+                <p>
+                    Non ha alcun signioficato proprio ma ha lo scopo di rappresentare gli elementi
+                    in esso annidati e specificare per loro gli attriburi. Viene usato soprattutto 
+                    per definire l'attributo class per lo stile di presentazione.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><div class=""> </div></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Span </h2> </header>
+            <section>
+                <p>
+                    Questo elemento opera in modo simile all'elemento div ma a livello 
+                    di testo (è un elemento inline). Ha lo scopo di rappresentare il testo 
+                    in esso contenuto e specidicare per esso gli attributi class, lang e title.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><span> </span></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Main </h2> </header>
+            <section>
+                <p>
+                    Questo elemento raggruppa gli elementi di struttura che rappresentano
+                    il contenuto principale del documento. Il documento deve avere un solo main.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><main> </main></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> a </h2> </header>
+            <section>
+                <p>
+                    Utilizzato sia per creare dei link a documenti o pagine esterne 
+                    (attraverso l’attributo href).
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><a href="file.html"> Doc </a></xmp>
+                </code>
+            </section>
+        </article>
+        <article>
+            <header> <h2> Blockquote </h2> </header>
+            <section>
+                <p>
+                    Per parti di contenuto che vengono citate da una sorgente esterna. 
+                    Specificato con l'attributo cite opzionale.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><blockquote> </blockquote></xmp>
+                </code>
+            </section>
+        </article>
+        <article>
+            <header> <h2> q </h2> </header>
+            <section>
+                <p>
+                    Simile a blockquote ma agisce su un breve testo. Si puo usare 
+                    l'attributo cite.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><q> </q></xmp>
+                </code>
+            </section>
+        </article>
+        <article>
+            <header> <h2> Cite </h2> </header>
+            <section>
+                <p>
+                    Per citare i riferimenti ad un lavoro creativo (come una bibliografia).
+                    Deve includere il titolo del lavoro, o il nome dell'autore o l'URL di riferimento.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><cite> </cite></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Strong </h2> </header>
+            <section>
+                <p>
+                    Strong importance, rendendo il suo contenuto testo importante. 
+                    Di solito rende il testo bold.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><strong> </strong></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Em </h2> </header>
+            <section>
+                <p>
+                    Stress emphasisUn testo o una frase che si pronuncia in modo deifferente 
+                    dal resto.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><em> </em></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Abbr </h2> </header>
+            <section>
+                <p>
+                    Abbreviazioni o acronimi. L'attributo title è usato per 
+                    inserire la versione espansa del termine.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><abbr> </abbr></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Code </h2> </header>
+            <section>
+                <p>
+                    Code, determina delle porzioni di codice. 
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><code> </code></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Dfn </h2> </header>
+            <section>
+                <p>
+                    Definizione di un termine. Con l'attributo title questo assume il 
+                    valore di definizione.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><dfn> </dfn></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Var </h2> </header>
+            <section>
+                <p>
+                    Variabili o costanti usate in documenti a carettere scientifico.
+                    (matematico, informatico o altro)
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><var> </var></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Sub </h2> </header>
+            <section>
+                <p>
+                    Corrisponde al apice. Con un risultsato grafico di default del testo 
+                    spostato sotto e rimpicciolito.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><sub> </sub></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Sup </h2> </header>
+            <section>
+                <p>
+                    Corrisponde al pedice. Con un risultsato grafico di default del testo 
+                    spostato di sopra e rimpicciolito.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><sup> </sup></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Ins </h2> </header>
+            <section>
+                <p>
+                    Serve per marcare le modifiche al documento, qunado si aggiunge contenuto
+                    al documento. Aggiungento l'attributo datetime per specificiare data e ora 
+                    della modifica.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><ins> </ins></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2> Del </h2> </header>
+            <section>
+                <p>
+                    Serve per marcare le modifiche al documento, qunado si cancella contenuto
+                    al documento.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><del> </del></xmp>
+                </code>
+            </section>
+        </article>
+
+        <article>
+            <header> <h2>Map</h2> </header>
+            <section>
+                <p>
+                    Una mappa è un immagine in cuio alcune aree sono interattive. Specificando
+                    aree sensibili con il tag area.
+                </p>
+            </section>
+            <section>
+                <code>
+                    <xmp><map name="planet"> </xmp>
+                    <xmp>  <area shape="rect" coords="0,0,0,1" href="sun.htm"/> </xmp>
+                    <xmp></map> </xmp>
+                </code>
+            </section>
+        </article>
+    </main>
+
+
+</body>
+</html>
