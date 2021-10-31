@@ -1,0 +1,14 @@
+article > header > div > img {
+    max-height: 200px;
+    
+}
+
+aside > ul > li > img {
+     width: 50px;
+     float: left;
+     margin-right: 2%;
+}
+
+a:hover{
+    color: red !important;
+}
